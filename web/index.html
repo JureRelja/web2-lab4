@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Stranica s fotografijama</title>
+    <link rel="stylesheet" href="./styles/global.css" />
+    <link rel="stylesheet" href="./styles/header.css" />
+    <link rel="stylesheet" href="./styles/gallery.css" />
+    <link rel="stylesheet" href="./styles/controls.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Stranica s fotografijama</h1>
+      <div class="hint">
+        Ova web stranica učitava slike iz direktorija <code>slike/</code> i
+        prikazuje ih u galeriji ispod.
+      </div>
+    </header>
+
+    <main>
+      <div id="gallery" aria-live="polite">
+        <img src="./slike/1.jpg" alt="Loading..." />
+        <img src="./slike/2.jpg" alt="Loading..." />
+        <img src="./slike/3.jpg" alt="Loading..." />
+        <img src="./slike/4.jpg" alt="Loading..." />
+        <img src="./slike/5.jpg" alt="Loading..." />
+        <img src="./slike/6.jpg" alt="Loading..." />
+        <img src="./slike/7.jpg" alt="Loading..." />
+        <img src="./slike/8.jpg" alt="Loading..." />
+        <img src="./slike/9.jpg" alt="Loading..." />
+        <img src="./slike/10.jpg" alt="Loading..." />
+        <img src="./slike/11.jpg" alt="Loading..." />
+        <img src="./slike/12.jpg" alt="Loading..." />
+        <img src="./slike/13.jpg" alt="Loading..." />
+        <img src="./slike/14.jpg" alt="Loading..." />
+        <img src="./slike/15.jpg" alt="Loading..." />
+      </div>
+      <div id="status" class="hint" role="status"></div>
+    </main>
+
+    <h2>Popis zemalja</h2>
+    <ul id="countries"></ul>
+
+    <script src="./scripts/fetch-countries.js"></script>
+  </body>
+</html>
